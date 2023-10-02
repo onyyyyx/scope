@@ -1,28 +1,20 @@
-let _var4 = ""
-function D (_var: number) {
-	
-}
-function C (_var2: number) {
-	
-}
-function U (_var3: number) {
-    if (convertToText(_var3).length <= 2) {
-        for (let index = 0; index <= 4; index++) {
+_var4 = ""
+
+def on_forever():
+    global _var4
+    mode = 0
+    _var4=""
+    if mode == 0:
+        _var4 = convert_to_text(_var4)
+    elif mode == 1:
+        _var4 = convert_to_text(_var4)
+    if len(convert_to_text(_var4)) <= 2:
+        for index in range(5):
             led.unplot(0, index)
-        }
-    } else if ([0][0] == "1") {
-    	
-    } else if (false) {
-    	
-    } else if (false) {
-    	
-    }
-}
-basic.forever(function () {
-    let mode = 0
-    if (mode == 0) {
-        _var4 = convertToText(_var4)
-    } else if (mode == 1) {
-        _var4 = convertToText(_var4)
-    }
-})
+    elif _var4[0] == "1":
+        led.plot(0, 0)
+    elif (0) == ("2"):
+        led.plot(2, 0)
+    elif (0) == ("3"):
+        led.plot(4, 0)
+basic.forever(on_forever)
