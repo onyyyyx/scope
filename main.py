@@ -10,12 +10,12 @@ function U (_var3: number) {
         for (let index = 0; index <= 4; index++) {
             led.unplot(0, index)
         }
-    } else if (true) {
-        led.plot(0, 0)
-    } else if ((0 as any) == ("2" as any)) {
-        led.plot(2, 0)
-    } else if ((0 as any) == ("3" as any)) {
-        led.plot(4, 0)
+    } else if ([0][0] == "1") {
+    	
+    } else if (false) {
+    	
+    } else if (false) {
+    	
     }
 }
 basic.forever(function () {
@@ -25,5 +25,4 @@ basic.forever(function () {
     } else if (mode == 1) {
         _var4 = convertToText(_var4)
     }
-    U(_var4)
 })
